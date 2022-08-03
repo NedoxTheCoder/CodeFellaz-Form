@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Fellaz Form</title>
+    <style>
+        body h1{text-align: center;}
+        .a{display: inline-block;width: 150px;}
+        .a:not(:last-child){margin-bottom: 10px;}
+        #itdeneyim{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            
+        }
+        #prgram{
+            display: flex;
+            align-items: center;
+            
+            
+        }
+        #prglabel{
+            margin-right: 20px;
+        }
+       .b{
+        display: inline-block;
+        width: 300px;
+       }
+       .slider-wrapper {
+        font-size: 30px;
+        color: #ada9a8;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .slider{
+        height: 50px;
+       }
+       .slider-text1{
+        background-color: lightcoral;
+        margin-bottom: 50px;
+        animation: slide 5s linear infinite ;
+       }
+       .slider-text2{
+        
+        background-color: lightcyan;
+        margin-bottom: 50px;
+       }
+       .slider-text3{
+        
+        background-color: lightgoldenrodyellow;
+       }
+       @keyframes slide {
+        0% {margin-top:-600px}
+       
+        33% {margin-top:-400px}
+       
+        66% {margin-top:-200px}
+
+        100% {margin-top: 0px}
+       }
+    </style>
+</head>
+<body>
+    <h1>Code Fellaz Grup Sözleşmesi</h1>
+    <form action="xyz.html" method="get">
+        <fieldset>
+            <legend>Sözleşme Onayı</legend>
+            <input type="checkbox" name="sözleşme onayı:" id="sözleşme" required>
+            <label for="sözleşme">Bu grubun gerekliliklerini yapacağıma söz veriyorum ve onaylıyorum.</label>
+        </fieldset>
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <label for="id" class="a">TC Kimlik No.:</label>
+            <input type="text" name="TC" id="" placeholder="11 haneli tcyi giriniz" pattern="[0-9]{11}">
+            <br>
+            <label for="ad" class="a">Adınız:</label>
+            <input type="text" name="Ad" id="ad">
+            <br>
+            <label for="soyad" class="a">Soyadınız:</label>
+            <input type="text" name="Soyad:" id="soyad">
+            <br>
+            <label for="yaş" class="a">Yaş:</label>
+            <input type="number" name="Yaş" id="yaş" max="90" min="15">
+            <br>
+            <label for="mail" class="a">E-mail:</label>
+            <input type="email" name="Email" id="mail">
+            <br>
+            <label for="foto" class="a">Fotoğraf:</label>
+            <input type="file" name="Foto" id="foto">
+        </fieldset>
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <h2>Burası IT bilgileriniz ile ilgilidir.</h2>
+            <label for="date" class="a">IT ile ilgilenmeye başladığınız tarih:</label>
+            <input type="date" name="Tarih" id="date" min="1990-08-03" max="2022-08-03">
+            <br>
+        <div id="itdeneyim">
+            <label for="" class="a" id="itdeney">IT deneyimiz:</label>
+        <div id="radio">
+            <input type="radio" name="Deneyim" id="zaman" value="0-5 yıl">
+            <label for="zaman">0-5 Yıl</label>
+            <br>
+            <input type="radio" name="Deneyim" id="zaman2" value="5-10 yıl">
+            <label for="zaman2">5-10 Yıl</label>
+            <br>
+            <input type="radio" name="Deneyim" id="zaman3" value="10-15 yıl">
+            <label for="zaman3">10-15 Yıl</label>
+            <br>
+            <input type="radio" name="Deneyim" id="zaman4" value="15+ yıl">
+            <label for="zaman4">15+ Yıl</label>
+        </div>
+            <br>
+        </div>
+        <div id="prgram">
+            <label for="program" id="prglabel">Programlama Dilleri</label>
+            <select name="Programlama" id="program" multiple>
+                <option value="c++">C++</option>
+                <option value="c#">C#</option>
+                <option value="c">C</option>
+                <option value="Python">Python</option>
+                <option value="js">JS</option>
+                <option value="ruby">Ruby</option>
+                <option value="php">PHP</option>
+            </select>
+        </div>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slider-text1">We</div>
+                <br>
+                <div class="slider-text2">Are</div>
+                <br>
+                <div class="slider-text3">Code Fellaz</div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Sözleşme Kopyası</legend> 
+            <textarea name="Sözleşme Kopyası" id="xyz" style="resize: none;height: 200px; width: 400px;" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aperiam reprehenderit neque saepe tempore perspiciatis aut explicabo atque voluptatem dolore pariatur, ducimus itaque doloremque corrupti provident tempora eveniet laborum! Inventore expedita natus deserunt maxime, magni reprehenderit cum voluptate rerum dignissimos nostrum quos distinctio? Quia iure dolorem ipsum cumque voluptatem quo voluptate distinctio error veniam porro! Neque, dicta, sapiente tenetur natus odit repellendus ab veniam praesentium dolor iusto dolore. Consequatur cumque voluptatum neque necessitatibus laboriosam nobis excepturi sed, quaerat amet repudiandae expedita delectus commodi modi. Dolores assumenda commodi corporis inventore quibusdam exercitationem, nihil alias modi debitis molestiae sint mollitia accusantium autem, dignissimos quisquam accusamus ea dicta voluptate aliquam ducimus fugiat? Quis temporibus ut sint obcaecati. Amet, qui, dicta corrupti deserunt eum quisquam distinctio beatae molestiae excepturi quia molestias iusto fugiat officia quo dignissimos autem facere, eos temporibus minima recusandae? Accusamus nobis sapiente mollitia labore fuga? Et beatae nobis accusantium cum saepe voluptate mollitia eos suscipit impedit facere ullam id, voluptas vel ipsam similique debitis quisquam a itaque ipsum dolorem praesentium fugit dolores laudantium perferendis. Qui quos sed expedita ratione in. Soluta odio, rerum molestias ducimus alias quod, animi saepe quam ex voluptas fugiat autem tempora tempore cum recusandae porro quo reprehenderit?</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Mail Bildirimleri</legend>
+            <label for="yes" class="b">Geri dönüş için mail bildirimleri almak <i><b>istiyorum.</b></i></label>
+            <input type="radio" name="Bildirim" id="yes" value="Evet">
+            <br>
+            <label for="no" class="b">Geri dönüş için mail bildirimleri almak <u><i><b>istemiyorum.</b></i></u></label>
+            <input type="radio" name="Bildirim" id="no" value="Hayır">
+        </fieldset>
+        <br>
+        <input type="submit" value="Formu Gönder">
+        <input type="reset" value="Formu Temizle">
+    </form>
+</body>
+</div>
+</html>
